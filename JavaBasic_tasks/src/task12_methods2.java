@@ -11,21 +11,25 @@ import java.util.Scanner;
 
 public class task12_methods2 {
     static void method1 (String name){
-        System.out.println("Hello, "+ name + "!");
+        if (name.equals("Alex") || name.equals("John") || name.equals("Stan") ){
+            System.out.println("Hello, "+ name + "!");
+        }
+        else {
+            System.out.println("Sorry, name was not found");
+        }
     }
     static String method2 (String name) {
         switch (name) {
             case "Alex":
                 System.out.println("Your seat is 1");
+                break;
             case "John":
                 System.out.println("Your seat is 2");
                 break;
             case "Stan":
                 System.out.println("Your seat is 3");
                 break;
-            default:
-                System.out.println("Sorry, the seat was not found for " + name);
-        }
+            }
         return name;
     }
 
